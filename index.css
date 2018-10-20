@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+/* common */
+html, body { width:100%; height:100%; }
+html, body, div, p, span, a, ol, ul, li, section, header, footer, img { margin:0; padding:0; }
+html, body, h1, h2, h3, h4, h5, h6, input, textarea, select, button { font-family:'Noto Sans KR', sans-serif, '돋움', Dotum; font-size:13px; font-weight:normal; color:#000; -webkit-font-smoothing:antialiased; }
+html, body { -ms-user-select:none; -moz-user-select:-moz-none; -webkit-user-select:none; -khtml-user-select:none; user-select:none; } /* 드래그 방지 */
+
+/* view */
+
+.view { min-width:960px; min-height:700px; position:relative; }
+.view .header { width:960px; height:150px; margin:0 auto; background-color:#fff;}
+.view .content { width:960px; height:100%; margin:0 auto; background-color:#555; }
+.view .footer { width:960px; height:50px; margin:0 auto; background-color:#fff; }
+
+/* header */
+.header .title { text-align:center; }
+
+/* footer */
+.footer p { font-size:10px; color:#000;  }
+
+/* content */
+
+
+
