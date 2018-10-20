@@ -9,10 +9,10 @@ html, body { -ms-user-select:none; -moz-user-select:-moz-none; -webkit-user-sele
 
 /* view */
 
-.view { min-width:960px; min-height:700px; position:relative; }
-.view .header { width:960px; height:150px; margin:0 auto; background-color:#fff;}
-.view .content { width:960px; height:100%; margin:0 auto; background-color:#555; }
-.view .footer { width:960px; height:50px; margin:0 auto; background-color:#fff; }
+.view { min-width:960px; min-height:1080px; position:relative; }
+.view .header { width:960px; height:150px; margin:0 auto; background-color:#EEE; border:solid 3px #fff;}
+.view .content { width:960px; height:700px; margin:0 auto; background-color:#FFF; border:solid 3px #fff;}
+.view .footer { width:960px; height:50px; margin:0 auto; background-color:#EEE; border:solid 3px #fff;}
 
 /* header */
 .header .title { text-align:center; }
