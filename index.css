@@ -18,7 +18,7 @@ html, body { -ms-user-select:none; -moz-user-select:-moz-none; -webkit-user-sele
 .header .title { text-align:center; font-size:30px; font-weight:bold; margin-top:50px; }
 
 /* footer */
-.footer p { font-size:10px; color:#000; text-align:center; }
+.footer p { font-size:15px; color:#000; text-align:center; margin-top:5px; }
 
 /* content */
 
