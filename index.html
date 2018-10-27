@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="device-width, initial-scale=1">
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="/daumeditor/css/editor.css" type="text/css" charset="utf-8"/> <script src="/daumeditor/js/editor_loader.js" type="text/javascript" charset="utf-8"></script> <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" href="/board/css/editor.css" type="text/css" charset="utf-8"/> <script src="/daumeditor/js/editor_loader.js" type="text/javascript" charset="utf-8"></script> <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<!-- jquery cdn -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
@@ -22,71 +22,71 @@
         <div class="content">
             <div class="board">
 				<form name="tx_editor_form" id="tx_editor_form" action="http://posttestserver.com/post.php" method="post" accept-charset="utf-8">
-		<!-- ������ �����̳� ���� -->
+		<!-- ?????? ??????? ???? -->
 		<div id="tx_trex_container" class="tx-editor-container">
-			<!-- ���̵�� -->
+			<!-- ?????? -->
 			<div id="tx_sidebar" class="tx-sidebar">
 				<div class="tx-sidebar-boundary">
-					<!-- ���̵�� / ÷�� -->
+					<!-- ?????? / ��?? -->
 					<ul class="tx-bar tx-bar-left tx-nav-attach">
-						<!-- �̹��� ÷�� ��ư ���� -->
+						<!-- ????? ��?? ??? ???? -->
 						<!--
 							@decsription
-							<li></li> ������ ��ġ�� �̵��� �� �ִ�.
+							<li></li> ?????? ????? ????? ?? ???.
 						-->
 						<li class="tx-list">
 							<div unselectable="on" id="tx_image" class="tx-image tx-btn-trans">
-								<a href="javascript:;" title="����" class="tx-text">����</a>
+								<a href="javascript:;" title="????" class="tx-text">????</a>
 							</div>
 						</li>
-						<!-- �̹��� ÷�� ��ư �� -->
+						<!-- ????? ��?? ??? ?? -->
 						<li class="tx-list">
 							<div unselectable="on" id="tx_file" class="tx-file tx-btn-trans">
-								<a href="javascript:;" title="����" class="tx-text">����</a>
+								<a href="javascript:;" title="????" class="tx-text">????</a>
 							</div>
 						</li>
 						<li class="tx-list">
 							<div unselectable="on" id="tx_media" class="tx-media tx-btn-trans">
-								<a href="javascript:;" title="�ܺ�������" class="tx-text">�ܺ�������</a>
+								<a href="javascript:;" title="?????????" class="tx-text">?????????</a>
 							</div>
 						</li>
 						<li class="tx-list tx-list-extra">
 							<div unselectable="on" class="tx-btn-nlrbg tx-extra">
-								<a href="javascript:;" class="tx-icon" title="��ư ������">��ư ������</a>
+								<a href="javascript:;" class="tx-icon" title="??? ??????">??? ??????</a>
 							</div>
 							<ul class="tx-extra-menu tx-menu" style="left:-48px;" unselectable="on">
 								<!--
 									@decsription
-									�Ϻ� ��ư���� ���� ���̾�� ����� ����� ���� ��� �� ������ �̵���ų �� �ִ�.
+									??? ??????? ???? ?????? ????? ????? ???? ??? ?? ?????? ?????? ?? ???.
 								-->
 							</ul>
 						</li>
 					</ul>
-					<!-- ���̵�� / �������� -->
+					<!-- ?????? / ???????? -->
 					<ul class="tx-bar tx-bar-right">
 						<li class="tx-list">
 							<div unselectable="on" class="tx-btn-lrbg tx-fullscreen" id="tx_fullscreen">
-								<a href="javascript:;" class="tx-icon" title="�аԾ��� (Ctrl+M)">�аԾ���</a>
+								<a href="javascript:;" class="tx-icon" title="?��???? (Ctrl+M)">?��????</a>
 							</div>
 						</li>
 					</ul>
 					<ul class="tx-bar tx-bar-right tx-nav-opt">
 						<li class="tx-list">
 							<div unselectable="on" class="tx-switchtoggle" id="tx_switchertoggle">
-								<a href="javascript:;" title="������ Ÿ��">������</a>
+								<a href="javascript:;" title="?????? ???">??????</a>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<!-- ���� - �⺻ ���� -->
+			<!-- ???? - ?? ???? -->
 			<!--
 				@decsription
-				���� ��ư�� �׷����� ������ �ʿ��� ���� ��ġ(����, ���, ������) �� ���� <li> �Ʒ��� <div>�� Ŭ�������� �����ϸ� �ȴ�.
-				tx-btn-lbg: ����, tx-btn-bg: ���, tx-btn-rbg: ������, tx-btn-lrbg: �������� �׷�
+				???? ????? ??????? ?????? ????? ???? ???(????, ????, ??????) ?? ???? <li> ????? <div>?? ????????? ??????? ???.
+				tx-btn-lbg: ????, tx-btn-bg: ????, tx-btn-rbg: ??????, tx-btn-lrbg: ???????? ???
 
-				��Ӵٿ� ��ư�� ũ�⸦ �����ϰ��� �� ��쿡�� ���̿� ���� <li> �Ʒ��� <div>�� Ŭ�������� �����ϸ� �ȴ�.
+				????? ????? ??? ????????? ?? ??��?? ????? ???? <li> ????? <div>?? ????????? ??????? ???.
 				tx-slt-70bg, tx-slt-59bg, tx-slt-42bg, tx-btn-43lrbg, tx-btn-52lrbg, tx-btn-57lrbg, tx-btn-71lrbg
 				tx-btn-48lbg, tx-btn-48rbg, tx-btn-30lrbg, tx-btn-46lrbg, tx-btn-67lrbg, tx-btn-49lbg, tx-btn-58bg, tx-btn-46bg, tx-btn-49rbg
 			-->
@@ -94,7 +94,7 @@
 				<ul class="tx-bar tx-bar-left">
 					<li class="tx-list">
 						<div id="tx_fontfamily" unselectable="on" class="tx-slt-70bg tx-fontfamily">
-							<a href="javascript:;" title="�۲�">����</a>
+							<a href="javascript:;" title="???">????</a>
 						</div>
 						<div id="tx_fontfamily_menu" class="tx-fontfamily-menu tx-menu" unselectable="on"></div>
 					</li>
@@ -102,7 +102,7 @@
 				<ul class="tx-bar tx-bar-left">
 					<li class="tx-list">
 						<div unselectable="on" class="tx-slt-42bg tx-fontsize" id="tx_fontsize">
-							<a href="javascript:;" title="����ũ��">9pt</a>
+							<a href="javascript:;" title="???????">9pt</a>
 						</div>
 						<div id="tx_fontsize_menu" class="tx-fontsize-menu tx-menu" unselectable="on"></div>
 					</li>
@@ -111,36 +111,36 @@
 
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-bold" id="tx_bold">
-							<a href="javascript:;" class="tx-icon" title="���� (Ctrl+B)">����</a>
+							<a href="javascript:;" class="tx-icon" title="???? (Ctrl+B)">????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-underline" id="tx_underline">
-							<a href="javascript:;" class="tx-icon" title="���� (Ctrl+U)">����</a>
+							<a href="javascript:;" class="tx-icon" title="???? (Ctrl+U)">????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-italic" id="tx_italic">
-							<a href="javascript:;" class="tx-icon" title="����� (Ctrl+I)">�����</a>
+							<a href="javascript:;" class="tx-icon" title="????? (Ctrl+I)">?????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-strike" id="tx_strike">
-							<a href="javascript:;" class="tx-icon" title="��Ҽ� (Ctrl+D)">��Ҽ�</a>
+							<a href="javascript:;" class="tx-icon" title="???? (Ctrl+D)">????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-slt-tbg 	tx-forecolor" id="tx_forecolor">
-							<a href="javascript:;" class="tx-icon" title="���ڻ�">���ڻ�</a>
-							<a href="javascript:;" class="tx-arrow" title="���ڻ� ����">���ڻ� ����</a>
+							<a href="javascript:;" class="tx-icon" title="?????">?????</a>
+							<a href="javascript:;" class="tx-arrow" title="????? ????">????? ????</a>
 						</div>
 						<div id="tx_forecolor_menu" class="tx-menu tx-forecolor-menu tx-colorpallete"
 							 unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-slt-brbg 	tx-backcolor" id="tx_backcolor">
-							<a href="javascript:;" class="tx-icon" title="���� ����">���� ����</a>
-							<a href="javascript:;" class="tx-arrow" title="���� ���� ����">���� ���� ����</a>
+							<a href="javascript:;" class="tx-icon" title="???? ????">???? ????</a>
+							<a href="javascript:;" class="tx-arrow" title="???? ???? ????">???? ???? ????</a>
 						</div>
 						<div id="tx_backcolor_menu" class="tx-menu tx-backcolor-menu tx-colorpallete"
 							 unselectable="on"></div>
@@ -149,49 +149,49 @@
 				<ul class="tx-bar tx-bar-left tx-group-align">
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-alignleft" id="tx_alignleft">
-							<a href="javascript:;" class="tx-icon" title="�������� (Ctrl+,)">��������</a>
+							<a href="javascript:;" class="tx-icon" title="???????? (Ctrl+,)">????????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-aligncenter" id="tx_aligncenter">
-							<a href="javascript:;" class="tx-icon" title="������� (Ctrl+.)">�������</a>
+							<a href="javascript:;" class="tx-icon" title="???????? (Ctrl+.)">????????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-alignright" id="tx_alignright">
-							<a href="javascript:;" class="tx-icon" title="���������� (Ctrl+/)">����������</a>
+							<a href="javascript:;" class="tx-icon" title="?????????? (Ctrl+/)">??????????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-rbg 	tx-alignfull" id="tx_alignfull">
-							<a href="javascript:;" class="tx-icon" title="��������">��������</a>
+							<a href="javascript:;" class="tx-icon" title="????????">????????</a>
 						</div>
 					</li>
 				</ul>
 				<ul class="tx-bar tx-bar-left tx-group-tab">
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-indent" id="tx_indent">
-							<a href="javascript:;" title="�鿩���� (Tab)" class="tx-icon">�鿩����</a>
+							<a href="javascript:;" title="?????? (Tab)" class="tx-icon">??????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-rbg 	tx-outdent" id="tx_outdent">
-							<a href="javascript:;" title="����� (Shift+Tab)" class="tx-icon">�����</a>
+							<a href="javascript:;" title="?????? (Shift+Tab)" class="tx-icon">??????</a>
 						</div>
 					</li>
 				</ul>
 				<ul class="tx-bar tx-bar-left tx-group-list">
 					<li class="tx-list">
 						<div unselectable="on" class="tx-slt-31lbg tx-lineheight" id="tx_lineheight">
-							<a href="javascript:;" class="tx-icon" title="�ٰ���">�ٰ���</a>
-							<a href="javascript:;" class="tx-arrow" title="�ٰ���">�ٰ��� ����</a>
+							<a href="javascript:;" class="tx-icon" title="?????">?????</a>
+							<a href="javascript:;" class="tx-arrow" title="?????">????? ????</a>
 						</div>
 						<div id="tx_lineheight_menu" class="tx-lineheight-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="tx-slt-31rbg tx-styledlist" id="tx_styledlist">
-							<a href="javascript:;" class="tx-icon" title="����Ʈ">����Ʈ</a>
-							<a href="javascript:;" class="tx-arrow" title="����Ʈ">����Ʈ ����</a>
+							<a href="javascript:;" class="tx-icon" title="?????">?????</a>
+							<a href="javascript:;" class="tx-arrow" title="?????">????? ????</a>
 						</div>
 						<div id="tx_styledlist_menu" class="tx-styledlist-menu tx-menu" unselectable="on"></div>
 					</li>
@@ -199,25 +199,25 @@
 				<ul class="tx-bar tx-bar-left tx-group-etc">
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-emoticon" id="tx_emoticon">
-							<a href="javascript:;" class="tx-icon" title="�̸�Ƽ��">�̸�Ƽ��</a>
+							<a href="javascript:;" class="tx-icon" title="??????">??????</a>
 						</div>
 						<div id="tx_emoticon_menu" class="tx-emoticon-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-link" id="tx_link">
-							<a href="javascript:;" class="tx-icon" title="��ũ (Ctrl+K)">��ũ</a>
+							<a href="javascript:;" class="tx-icon" title="??? (Ctrl+K)">???</a>
 						</div>
 						<div id="tx_link_menu" class="tx-link-menu tx-menu"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-specialchar" id="tx_specialchar">
-							<a href="javascript:;" class="tx-icon" title="Ư������">Ư������</a>
+							<a href="javascript:;" class="tx-icon" title="???????">???????</a>
 						</div>
 						<div id="tx_specialchar_menu" class="tx-specialchar-menu tx-menu"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-table" id="tx_table">
-							<a href="javascript:;" class="tx-icon" title="ǥ�����">ǥ�����</a>
+							<a href="javascript:;" class="tx-icon" title="??????">??????</a>
 						</div>
 						<div id="tx_table_menu" class="tx-table-menu tx-menu" unselectable="on">
 							<div class="tx-menu-inner">
@@ -230,7 +230,7 @@
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-rbg 	tx-horizontalrule" id="tx_horizontalrule">
-							<a href="javascript:;" class="tx-icon" title="���м�">���м�</a>
+							<a href="javascript:;" class="tx-icon" title="???��?">???��?</a>
 						</div>
 						<div id="tx_horizontalrule_menu" class="tx-horizontalrule-menu tx-menu" unselectable="on"></div>
 					</li>
@@ -238,7 +238,7 @@
 				<ul class="tx-bar tx-bar-left">
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-richtextbox" id="tx_richtextbox">
-							<a href="javascript:;" class="tx-icon" title="�ۻ���">�ۻ���</a>
+							<a href="javascript:;" class="tx-icon" title="?????">?????</a>
 						</div>
 						<div id="tx_richtextbox_menu" class="tx-richtextbox-menu tx-menu">
 							<div class="tx-menu-header">
@@ -246,8 +246,8 @@
 									<div class="tx-menu-preview"></div>
 								</div>
 								<div class="tx-menu-switch">
-									<div class="tx-menu-simple tx-selected"><a><span>���� ����</span></a></div>
-									<div class="tx-menu-advanced"><a><span>���� ����</span></a></div>
+									<div class="tx-menu-simple tx-selected"><a><span>???? ????</span></a></div>
+									<div class="tx-menu-advanced"><a><span>???? ????</span></a></div>
 								</div>
 							</div>
 							<div class="tx-menu-inner">
@@ -262,45 +262,45 @@
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-quote" id="tx_quote">
-							<a href="javascript:;" class="tx-icon" title="�ο뱸 (Ctrl+Q)">�ο뱸</a>
+							<a href="javascript:;" class="tx-icon" title="?��? (Ctrl+Q)">?��?</a>
 						</div>
 						<div id="tx_quote_menu" class="tx-quote-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-bg 	tx-background" id="tx_background">
-							<a href="javascript:;" class="tx-icon" title="����">����</a>
+							<a href="javascript:;" class="tx-icon" title="????">????</a>
 						</div>
 						<div id="tx_background_menu" class="tx-menu tx-background-menu tx-colorpallete"
 							 unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-rbg 	tx-dictionary" id="tx_dictionary">
-							<a href="javascript:;" class="tx-icon" title="����">����</a>
+							<a href="javascript:;" class="tx-icon" title="????">????</a>
 						</div>
 					</li>
 				</ul>
 				<ul class="tx-bar tx-bar-left tx-group-undo">
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-lbg 	tx-undo" id="tx_undo">
-							<a href="javascript:;" class="tx-icon" title="������� (Ctrl+Z)">�������</a>
+							<a href="javascript:;" class="tx-icon" title="??????? (Ctrl+Z)">???????</a>
 						</div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="		 tx-btn-rbg 	tx-redo" id="tx_redo">
-							<a href="javascript:;" class="tx-icon" title="�ٽý��� (Ctrl+Y)">�ٽý���</a>
+							<a href="javascript:;" class="tx-icon" title="??y??? (Ctrl+Y)">??y???</a>
 						</div>
 					</li>
 				</ul>
 				<ul class="tx-bar tx-bar-right">
 					<li class="tx-list">
 						<div unselectable="on" class="tx-btn-nlrbg tx-advanced" id="tx_advanced">
-							<a href="javascript:;" class="tx-icon" title="���� ������">���� ������</a>
+							<a href="javascript:;" class="tx-icon" title="???? ??????">???? ??????</a>
 						</div>
 					</li>
 				</ul>
 			</div></div>
-			<!-- ���� - �⺻ �� -->
-			<!-- ���� - ������ ���� -->
+			<!-- ???? - ?? ?? -->
+			<!-- ???? - ?????? ???? -->
 			<div id="tx_toolbar_advanced" class="tx-toolbar tx-toolbar-advanced"><div class="tx-toolbar-boundary">
 				<ul class="tx-bar tx-bar-left">
 					<li class="tx-list">
@@ -311,19 +311,19 @@
 				<ul class="tx-bar tx-bar-left tx-group-align">
 					<li class="tx-list">
 						<div unselectable="on" class="tx-btn-lbg tx-mergecells" id="tx_mergecells">
-							<a href="javascript:;" class="tx-icon2" title="����">����</a>
+							<a href="javascript:;" class="tx-icon2" title="????">????</a>
 						</div>
 						<div id="tx_mergecells_menu" class="tx-mergecells-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="tx-btn-bg tx-insertcells" id="tx_insertcells">
-							<a href="javascript:;" class="tx-icon2" title="����">����</a>
+							<a href="javascript:;" class="tx-icon2" title="????">????</a>
 						</div>
 						<div id="tx_insertcells_menu" class="tx-insertcells-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div unselectable="on" class="tx-btn-rbg tx-deletecells" id="tx_deletecells">
-							<a href="javascript:;" class="tx-icon2" title="����">����</a>
+							<a href="javascript:;" class="tx-icon2" title="????">????</a>
 						</div>
 						<div id="tx_deletecells_menu" class="tx-deletecells-menu tx-menu" unselectable="on"></div>
 					</li>
@@ -332,14 +332,14 @@
 				<ul class="tx-bar tx-bar-left tx-group-align">
 					<li class="tx-list">
 						<div id="tx_cellslinepreview" unselectable="on" class="tx-slt-70lbg tx-cellslinepreview">
-							<a href="javascript:;" title="�� �̸�����"></a>
+							<a href="javascript:;" title="?? ???????"></a>
 						</div>
 						<div id="tx_cellslinepreview_menu" class="tx-cellslinepreview-menu tx-menu"
 							 unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div id="tx_cellslinecolor" unselectable="on" class="tx-slt-tbg tx-cellslinecolor">
-							<a href="javascript:;" class="tx-icon2" title="����">����</a>
+							<a href="javascript:;" class="tx-icon2" title="????">????</a>
 
 							<div class="tx-colorpallete" unselectable="on"></div>
 						</div>
@@ -348,7 +348,7 @@
 					</li>
 					<li class="tx-list">
 						<div id="tx_cellslineheight" unselectable="on" class="tx-btn-bg tx-cellslineheight">
-							<a href="javascript:;" class="tx-icon2" title="�β�">�β�</a>
+							<a href="javascript:;" class="tx-icon2" title="?��?">?��?</a>
 
 						</div>
 						<div id="tx_cellslineheight_menu" class="tx-cellslineheight-menu tx-menu"
@@ -356,13 +356,13 @@
 					</li>
 					<li class="tx-list">
 						<div id="tx_cellslinestyle" unselectable="on" class="tx-btn-bg tx-cellslinestyle">
-							<a href="javascript:;" class="tx-icon2" title="��Ÿ��">��Ÿ��</a>
+							<a href="javascript:;" class="tx-icon2" title="?????">?????</a>
 						</div>
 						<div id="tx_cellslinestyle_menu" class="tx-cellslinestyle-menu tx-menu" unselectable="on"></div>
 					</li>
 					<li class="tx-list">
 						<div id="tx_cellsoutline" unselectable="on" class="tx-btn-rbg tx-cellsoutline">
-							<a href="javascript:;" class="tx-icon2" title="�׵θ�">�׵θ�</a>
+							<a href="javascript:;" class="tx-icon2" title="??��?">??��?</a>
 
 						</div>
 						<div id="tx_cellsoutline_menu" class="tx-cellsoutline-menu tx-menu" unselectable="on"></div>
@@ -372,7 +372,7 @@
 					<li class="tx-list">
 						<div id="tx_tablebackcolor" unselectable="on" class="tx-btn-lrbg tx-tablebackcolor"
 							 style="background-color:#9aa5ea;">
-							<a href="javascript:;" class="tx-icon2" title="���̺� ����">���̺� ����</a>
+							<a href="javascript:;" class="tx-icon2" title="????? ????">????? ????</a>
 						</div>
 						<div id="tx_tablebackcolor_menu" class="tx-tablebackcolor-menu tx-menu tx-colorpallete"
 							 unselectable="on"></div>
@@ -381,7 +381,7 @@
 				<ul class="tx-bar tx-bar-left">
 					<li class="tx-list">
 						<div id="tx_tabletemplate" unselectable="on" class="tx-btn-lrbg tx-tabletemplate">
-							<a href="javascript:;" class="tx-icon2" title="���̺� ����">���̺� ����</a>
+							<a href="javascript:;" class="tx-icon2" title="????? ????">????? ????</a>
 						</div>
 						<div id="tx_tabletemplate_menu" class="tx-tabletemplate-menu tx-menu tx-colorpallete"
 							 unselectable="on"></div>
@@ -389,9 +389,9 @@
 				</ul>
 
 			</div></div>
-			<!-- ���� - ������ �� -->
-			<!-- �������� ���� -->
-				<!-- ������ Start -->
+			<!-- ???? - ?????? ?? -->
+			<!-- ???????? ???? -->
+				<!-- ?????? Start -->
 	<div id="tx_canvas" class="tx-canvas">
 		<div id="tx_loading" class="tx-loading"><div><img src="images/icon/editor/loading2.png" width="113" height="21" align="absmiddle"/></div></div>
 		<div id="tx_canvas_wysiwyg_holder" class="tx-holder" style="display:block;">
@@ -406,7 +406,7 @@
 			<textarea id="tx_canvas_text" rows="30" cols="30"></textarea>
 		</div>
 	</div>
-					<!-- �������� Start -->
+					<!-- ???????? Start -->
 	<div id="tx_resizer" class="tx-resize-bar">
 		<div class="tx-resize-bar-bg"></div>
 		<img id="tx_resize_holder" src="images/icon/editor/skin/01/btn_drag01.gif" width="58" height="12" unselectable="on" alt="" />
@@ -416,20 +416,20 @@
 			<img hspace="4" height="14" width="78" align="absmiddle" src="images/icon/editor/editor_bi.png" />
 		</div>
 	</div>
-				<!-- �������� �� -->
-			<!-- ÷�ιڽ� ���� -->
-				<!-- ����÷�ιڽ� Start -->
+				<!-- ???????? ?? -->
+			<!-- ��?��?? ???? -->
+				<!-- ????��?��?? Start -->
 	<div id="tx_attach_div" class="tx-attach-div">
-		<div id="tx_attach_txt" class="tx-attach-txt">���� ÷��</div>
+		<div id="tx_attach_txt" class="tx-attach-txt">???? ��??</div>
 		<div id="tx_attach_box" class="tx-attach-box">
 			<div class="tx-attach-box-inner">
 				<div id="tx_attach_preview" class="tx-attach-preview"><p></p><img src="images/icon/editor/pn_preview.gif" width="147" height="108" unselectable="on"/></div>
 				<div class="tx-attach-main">
-					<div id="tx_upload_progress" class="tx-upload-progress"><div>0%</div><p>������ ���ε��ϴ� ���Դϴ�.</p></div>
+					<div id="tx_upload_progress" class="tx-upload-progress"><div>0%</div><p>?????? ???��???? ??????.</p></div>
 					<ul class="tx-attach-top">
-						<li id="tx_attach_delete" class="tx-attach-delete"><a>��ü����</a></li>
+						<li id="tx_attach_delete" class="tx-attach-delete"><a>??u????</a></li>
 						<li id="tx_attach_size" class="tx-attach-size">
-							����: <span id="tx_attach_up_size" class="tx-attach-size-up"></span>/<span id="tx_attach_max_size"></span>
+							????: <span id="tx_attach_up_size" class="tx-attach-size-up"></span>/<span id="tx_attach_max_size"></span>
 						</li>
 						<li id="tx_attach_tools" class="tx-attach-tools">
 						</li>
@@ -439,24 +439,24 @@
 			</div>
 		</div>
 	</div>
-				<!-- ÷�ιڽ� �� -->
+				<!-- ��?��?? ?? -->
 		</div>
-		<!-- ������ �����̳� �� -->
+		<!-- ?????? ??????? ?? -->
 	</form>
 	<!-- Sample: Saving Contents -->
 <script type="text/javascript">
-	/* ������ �Լ� */
+	/* ?????? ??? */
 	function saveContent() {
-		Editor.save(); // �� �Լ��� ȣ���Ͽ� ���� ����ϸ� �ȴ�.
+		Editor.save(); // ?? ????? ?????? ???? ?????? ???.
 	}
 
 	/**
-	 * Editor.save()�� ȣ���� ��� �����Ͱ� ��ȿ���� �˻��ϱ� ���� �θ��� �ݹ��Լ���
-	 * ��Ȳ�� �°� �����Ͽ� ����Ѵ�.
-	 * ��� �����Ͱ� ��ȿ�� ��쿡 true�� �����Ѵ�.
+	 * Editor.save()?? ????? ??? ??????? ??????? ?????? ???? ?��??? ????????
+	 * ????? ?��? ??????? ??????.
+	 * ??? ??????? ????? ??�� true?? ???????.
 	 * @function
-	 * @param {Object} editor - �����Ϳ��� �Ѱ��ִ� editor ��ü
-	 * @returns {Boolean} ��� �����Ͱ� ��ȿ�� ��쿡 true
+	 * @param {Object} editor - ????????? ?????? editor ??u
+	 * @returns {Boolean} ??? ??????? ????? ??�� true
 	 */
 	function validForm(editor) {
 		// Place your validation logic here
@@ -465,7 +465,7 @@
 		var validator = new Trex.Validator();
 		var content = editor.getContent();
 		if (!validator.exists(content)) {
-			alert('������ �Է��ϼ���');
+			alert('?????? ????????');
 			return false;
 		}
 
@@ -473,36 +473,36 @@
 	}
 
 	/**
-	 * Editor.save()�� ȣ���� ��� validForm callback �� ����� ����
-	 * ���� form submit�� ���� form �ʵ带 ����, �����ϱ� ���� �θ��� �ݹ��Լ���
-	 * ���� ��Ȳ�� �°� ������ �����Ͽ� ����Ѵ�.
+	 * Editor.save()?? ????? ??? validForm callback ?? ????? ????
+	 * ???? form submit?? ???? form ??? ????, ??????? ???? ?��??? ????????
+	 * ???? ????? ?��? ?????? ??????? ??????.
 	 * @function
-	 * @param {Object} editor - �����Ϳ��� �Ѱ��ִ� editor ��ü
-	 * @returns {Boolean} �������� ��쿡 true
+	 * @param {Object} editor - ????????? ?????? editor ??u
+	 * @returns {Boolean} ???????? ??�� true
 	 */
 	function setForm(editor) {
         var i, input;
         var form = editor.getForm();
         var content = editor.getContent();
 
-        // ���� ������ �ʵ带 �����Ͽ� ���� �Ҵ��ϴ� �κ�
+        // ???? ?????? ??? ??????? ???? ?????? ?��?
         var textarea = document.createElement('textarea');
         textarea.name = 'content';
         textarea.value = content;
         form.createField(textarea);
 
-        /* �Ʒ��� �ڵ�� ÷�ε� �����͸� �ʵ带 �����Ͽ� ���� �Ҵ��ϴ� �κ����� ��Ȳ�� �°� �����Ͽ� ����Ѵ�.
-         ÷�ε� ������ �߿� �־��� ����(image,file..)�� �ش��ϴ� �͸� �迭�� �Ѱ��ش�. */
+        /* ????? ???? ��?��? ??????? ??? ??????? ???? ?????? ?��????? ????? ?��? ??????? ??????.
+         ��?��? ?????? ??? ????? ????(image,file..)?? ?????? ??? ?��?? ??????. */
         var images = editor.getAttachments('image');
         for (i = 0; i < images.length; i++) {
-            // existStage�� ���� ������ �����ϴ��� ����
+            // existStage?? ???? ?????? ????????? ????
             if (images[i].existStage) {
-                // data�� �˾����� execAttach ���� ���� �ѱ� ������
+                // data?? ??????? execAttach ???? ???? ??? ??????
                 alert('attachment information - image[' + i + '] \r\n' + JSON.stringify(images[i].data));
                 input = document.createElement('input');
                 input.type = 'hidden';
                 input.name = 'attach_image';
-                input.value = images[i].data.imageurl;  // �������� �̹�����θ� �޾Ƽ� ���
+                input.value = images[i].data.imageurl;  // ???????? ???????��? ???? ???
                 form.createField(input);
             }
         }
