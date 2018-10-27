@@ -1,1 +1,0 @@
-<form name="tx_editor_form" id="tx_editor_form" action="/insert.jsp" method="post" accept-charset="utf-8"> <table width="100%"> <tr> <td>제목</td> <td><input type="text" id="title" name="title" /></td> </tr> <tr> <td>내용</td> <td id="editorTd"></td> </tr> <tr> <td colspan="2"> <input type="button" id="save" value="저장"/> <input type="button" value="취소"/> </td> </tr> </table> </form>
