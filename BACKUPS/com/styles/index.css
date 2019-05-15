@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import '../plugins/awesome/css/font-awesome.min.css';
+
+/* common */
+html, body, header, nav, a, img, ol, ul, li, p, div, span, h1, h2, h3, h4, h5, h6, input, textarea, i, form { margin:0; padding:0; }
+html, body, h1, h2, h3, h4, h5, h6, input, textarea, select, button { font-family:'Noto Sans KR', sans-serif, '돋움', Dotum; font-size:13px; font-weight:normal; color:#000; -webkit-font-smoothing:antialiased; }
+a, a:link, a:visited, a:horizontal, a:active { text-decoration:none; color:inherit; cursor:pointer; }
+ol, ul, li { list-style:none; }
+img { border:none; }
+input, textarea { border:none; outline:none; vertical-align:baseline; }
+
+/* header */
+.header { width:100%; background:#292929; position:fixed; top:0; left:0; z-index:100; color:#fff; line-height:80px; }
+.nav { width:80%; margin:0 auto; min-width:320px !important; }
+
+.nav .logo { float:left; }
+.nav .logo img { max-height:60px; vertical-align:middle; }
+
+.nav ul { position:relative; float:right; }
+.nav ul li { position:relative; display:block; float:left; }
+.nav ul li a { white-space:nowrap; padding-left:25px; text-transform:uppercase; letter-spacing:1px; font-size:12px; position:relative; display:block; transition:0.2s color linear; -webkit-transition:0.2s color linear; -moz-transition:0.2s color linear; }
+.nav ul li a:hover { color:#87ceeb; }
+.nav ul li .item::after { content:"•"; position:absolute; top:0px; color:#fff; left:9px; }
+
+.nav .m-menu { width:36px; height:50px; cursor:pointer; background:transparent; display:none; float:right; }
+.nav .m-menu::before { font-family:FontAwesome; content:"\f0ca"; display:inline; font-size:35px; color:#fff; text-align:center; }
+
+/* content (apps) */
+.apps { width:100%; height:400px; }
+.apps .hidden { width:100%; height:80px; }
+.apps .mainBanner { width:100%; height:320px; }
+.apps .mainBanner .item { width:100%; height:100%; background:url(../images/banner/bnr00.png) no-repeat center center #a4a3a1; text-align:center; }
+.apps .mainBanner .item .title { font-size:40px; color:#fff; padding:140px 0; text-shadow:3px 3px rgba(0, 0, 0, 0.5); }
+
+/* content (desc) */
+.section { padding:60px 0; color:#fff; }
+.section .container { max-width:1024px; margin:0 auto; overflow:auto; padding:40px; }
+.section .desc { width:45%; }
+.section .desc .fa { font-size:60px; margin-bottom:20px; }
+.section .desc .title { font-size:24px; margin-bottom:15px; color:#fff; font-weight:bold; }
+.section .desc .text { font-size:18px; word-break:keep-all; }
+
+/* content (contact) */
+.contact { background:#2e363f; color:#fff; padding:40px 0; }
+.contact .container { max-width:1024px; margin:0 auto; padding:40px 15px; }
+.contact .container .title { color:#fff; font-size:24px; font-weight:bold; margin-bottom:15px; }
+.contact .container .text { font-size:18px; word-break:keep-all; margin-bottom:20px; }
+.contact .container p { padding-bottom:20px; }
+.contact .container p input { color:#fff; width:100%; padding:10px 0; display:block; transition:0.2s background linear; -webkit-transition:0.2s background linear; -moz-transition:0.2s background linear; background:rgba(0, 0, 0, 0.5); background-clip:padding-box; letter-spacing:0.5px; }
+.contact .container p textarea { color:#fff; width:100%; padding:10px 0; display:block; transition:0.2s background linear; -webkit-transition:0.2s background linear; -moz-transition:0.2s background linear; background:rgba(0, 0, 0, 0.5); background-clip:padding-box; letter-spacing:0.5px; }
+.contact .container p .submit { width:auto; padding:8px 12px; }
+
+/* footer */
+.footer { width:100%; background:#292929; font-size:13px; color:#fff; text-align:center; padding:20px 0; }
+.footer p span { white-space:nowrap; margin-left:10px; }
+.footer p .info::before { font-family:FontAwesome; content:"\f05a"; display:inline; margin-left:0px !important; }
+.footer p .address::before { font-family:FontAwesome; content:"\f041"; display:inline; }
+.footer p .phone::before { font-family:FontAwesome; content:"\f095"; display:inline; }
+.footer p .mail::before { font-family:FontAwesome; content:"\f0e0"; display:inline; }
+
+
+/* content color */
+.skyblue { background:#9eddef; }
+.skyblue .container { background:url(../images/doing.png) no-repeat right center; background-size:50%; }
+.pink { background:#f67c93; }
+.pink .container { background:url(../images/works.png) no-repeat right top; background-size:50%; }
+.yellow { background:#f7c654; }
+.yellow .container { background:url(../images/what.png) no-repeat right top; background-size:50%; }
+
+@media only screen and (max-width:767px)
+{
+    .section .container .desc { width:100% !important; }
+    .section .container { background:none; }
+}
+@media only screen and (max-width:1023px)
+{
+    .nav ul { display:none !important; }
+    .nav .m-menu { display:inline !important; }
+}

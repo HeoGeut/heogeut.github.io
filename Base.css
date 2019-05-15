@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+/* common */
+html, body { width:100%; height:100%; }
+html, body, div, p, span, a, ol, ul, li, section, header, footer, img { margin:0; padding:0; }
+html, body, h1, h2, h3, h4, h5, h6, input, textarea, select, button { font-family:'Noto Sans KR', sans-serif, '돋움', Dotum; font-size:13px; font-weight:normal; color:#000; -webkit-font-smoothing:antialiased; }
+html, body { -ms-user-select:none; -moz-user-select:-moz-none; -webkit-user-select:none; -khtml-user-select:none; user-select:none; } /* 드래그 방지 */
+
+a, a:link, a:visited, a:active, a:hover { text-decoration:none; color:inherit; cursor:pointer; }
+ol, ul, li { list-style:none; }
+img { border:none; }
+
+/* base */
+.view { width:960px; width:100%; height:100%; position:relative; min-height:750px; max-height:1000px; min-width:960px; } /* 960px */
+.view { background-position:center top; background-repeat:no-repeat; background-size:120% 500px; }
+.view2 { width:960px; width:100%; height:100%; position:relative; min-height:750px; max-height:1000px; min-width:960px;}
+
+.header { min-width:960px; width:100%; padding:10px 0 25px 0; }
+.header .inner { min-width:960px; width:960px; margin:0 auto; overflow:hidden; } /* 960px */
+
+.header .inner .translate { height:20px; float:right;}
+
+.header .inner .main { width:100%; }
+.header .inner .main .util { float:right; }
+.header .inner .main .util span { font-size:14px; font-weight:bold; color:#ff0000; }
+.header .inner .main .util a { margin-right:20px; text-transform:uppercase; font-size:12px; font-weight:bold; }
+
+.header .inner .nav { width:100%; padding-top:30px; white-space: nowrap; overflow:hidden; }
+.header .inner .nav li { float:left; padding-left:88px; white-space: nowrap;}
+.header .inner .nav .zero {float:left; padding-left:0px; white-space: nowrap;}
+.header .inner .nav li a { font-size:20px; font-weight:bolder; text-transform:uppercase; }
+
+.footer { width:100%; position:static; font-size:11px; text-transform:uppercase; text-align:center; padding-top:10px; padding-bottom:10px; background-color:#fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:960px)
+{
+    .view { background-image:url("images/BG_960.png"); }
+}
+@media only screen and (min-width:960px)
+{
+    .view { background-image:url("images/BG_960.png"); }
+}
+@media only screen and (min-width:970px)
+{
+    .view { background-image:url("images/BG_970.png"); }
+}
+@media only screen and (min-width:1024px)
+{
+    .view { background-image:url("images/BG_1024.png"); }
+}
+@media only screen and (min-width:1280px)
+{
+	.view  {background-image:url("images/BG_1280.png"); }
+}
+@media only screen and (min-width:1366px)
+{
+    .view { background-image:url("images/BG_1366.png"); }
+}
+@media only screen and (min-width:1440px)
+{
+    .view { background-image:url("images/BG_1440.png"); background-size:100% 500px;}
+}
+@media only screen and (min-width:1600px)
+{
+    .view { background-image:url("images/BG_1600.png"); background-size:100% 500px;}
+}
+@media only screen and (min-width:1920px)
+{
+    .view { background-image:url("images/BG_1920.png"); background-size:100% 500px;}
+}
+@media only screen and (min-width:2560px)
+{
+    .view { background-image:url("images/BG_2560.png"); background-size:100% 500px;}
+}

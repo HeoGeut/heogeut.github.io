@@ -1,0 +1,60 @@
+﻿@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import 'plugins/font-awesome-4.7.0/css/font-awesome.min.css';
+
+/* common */
+body, header, div, a, img, h1, h2, h3, h4, h5, h6, input, textarea, select, button { margin:0; padding:0; }
+body, h1, h2, h3, h4, h5, h6, input, textarea, select, button { color:#000; font-size:13px; font-weight:300; font-family:'Noto Sans KR', sans-serif, '돋움', Dotum; -webkit-font-smoothing:antialiased; }
+
+a, a:link, a:visited, a:hover, a:active { text-decoration:none; color:#000; cursor:pointer; }
+img { height:auto; max-height:100%; }
+
+header { width:100%; background:#292929; line-height:80px; position:fixed; top:0; left:0; z-index:999; }
+header .perspective { width:100%; height:100%; position:relative; perspective:1100px; -webkit-perspective:1100px; -moz-perspective:1100px; perspective-origin:50% 0; -webkit-perspective-origin:50% 0; -moz-perspective-origin:50% 0; }
+header .front { position:relative; z-index:2; backface-visibility:hidden; -webkit-backface-visibility:hidden; -moz-backface-visibility:hidden; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -moz-transform-origin:50% 100%; }
+header .left { float:left; position:relative; width:50%; padding-left:30px; padding-left:30px; }
+
+.content { position:relative; z-index:inherit; }
+
+/* desc */
+.desc { padding:80px 0; }
+
+.desc-container { margin-left:auto; margin-right:auto; max-width:1080px; }
+.desc-content { width:100%; color:#fff; }
+.desc-context .fa { font-size:60px; margin-bottom:10px; }
+.desc-context h2 { font-size:25px; color:#fff; margin-bottom:10px; }
+.desc-context h3 { font-size:16px; color:#fff; }
+
+.doing { background-color:#9eddef; }
+.works { background-color:#f67c93; }
+.what { background-color:#ffdf4a; }
+
+/* custom */
+.site-logo { text-align:left; height:80px; line-height:80px; position:relative; }
+.site-logo img { max-height:60px; vertical-align:middle; }
+
+/* debug */
+#debug { width:100%; height:80px; background-color:red; }
+
+@media (min-width:320px)
+{
+    .desc-context { width:100%; }
+
+    .desc-content { background-image:none; }
+
+    .desc-context .fa { padding:0 20px; }
+    .desc-context h2 { padding:0 20px; }
+    .desc-context h3 { padding:0 20px; }
+}
+@media (min-width:768px)
+{
+    .desc-content { padding:120px 0; background:url("images/h2_monitering.png") no-repeat; background-position-x:right; background-position-y:top; background-size:650px 576px; }
+    .desc-context { width:30.66%; }
+    header .left { width:20%; left:5%; }
+}
+@media (min-width:1080px) and (max-width:1080px)
+{
+    .desc-context .fa { padding:unset; }
+    .desc-context h2 { padding:unset; }
+    .desc-context h3 { padding:unset; }
+}

@@ -1,0 +1,58 @@
+﻿@charset "UTF-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import 'plugins/font-awesome-4.7.0/css/font-awesome.min.css';
+html { scroll-behavior:smooth; }
+body, header, footer, div, section, nav, ol, ul, li, a, p, button, img, i { margin:0; padding:0; }
+body, h1, h2, h3, h4, h5, h6, input, textarea, select, button { font-family:'Noto Sans KR', sans-serif, '돋움', Dotum; font-size:13px; font-weight:300; color:#000; -webkit-font-smoothing:antialiased; }
+ol, ul, li { list-style:none; }
+a, a:link, a:visited, a:hover, a:active { text-decoration:none; color:inherit; cursor:pointer; }
+img, button { border:none; vertical-align:bottom; }
+
+.navigation { width:80%; margin:0 auto; min-width:320px; }
+
+.header { width:100%; background:#292929; position:fixed; top:0; left:0; z-index:100; color:#fff; line-height:80px; }
+
+.header a img { max-height:60px; vertical-align:middle; }
+
+.header ul { position:relative; float:right; }
+.header ul li { position:relative; display:block; float:left; }
+.header ul li a { white-space:nowrap; padding-left:25px; text-transform:uppercase; letter-spacing:1px; font-size:12px; position:relative; display:block; transition:0.2s color linear; -webkit-transition:0.2s color linear; -moz-transition:0.2s color linear; }
+.header ul li a:hover { color:#87ceeb; }
+.header ul li .item::after { content:"•"; position:absolute; top:0px; color:#fff; left:9px; }
+
+.header .mobile-menu { width:36px; height:50px; cursor:pointer; background:transparent; display:none; float:right; }
+.header .mobile-menu::before { font-family:FontAwesome; content:"\f0ca"; display:inline; font-size:35px; color:#fff; text-align:center; }
+
+.app { width:100%; height:960px; display:table; }
+.app .item { width:100px; height:100px; display:table-cell; vertical-align:middle; background:url(images/temp2.png) no-repeat top center; text-align:center;}
+.app .item h2 { font-size:40px; font-weight:bold; color:#fff; }
+
+.section { padding:80px 0; color:#fff; }
+.section .container { max-width:1024px;  margin:0 auto; overflow:auto; padding:10px; }
+.section .container .desc { width:30%; float:left; }
+.section .container .desc .fa { font-size:60px; margin-bottom:20px; }
+.section .container .desc .title { font-size:24px; margin-bottom:15px; color:#fff; }
+.section .container .desc .text { font-size:16px; word-break:keep-all; }
+.section .container img { width:50%; float:right; }
+
+.skyblue { background:#9eddef; }
+.pink { background:#f67c93; }
+.yellow { background:#ffdf4a; }
+
+.footer { width:100%; background:#292929; color:#fff; text-align:center; padding:20px 0; }
+.footer p span{white-space:nowrap; margin-left:10px;}
+.footer p .info::before { font-family:FontAwesome; content:"\f05a"; display:inline; margin-left:0px !important;}
+.footer p .address::before { font-family:FontAwesome; content:"\f041"; display:inline; }
+.footer p .phone::before { font-family:FontAwesome; content:"\f095"; display:inline; }
+.footer p .mail::before { font-family:FontAwesome; content:"\f0e0"; display:inline; }
+
+@media only screen and (max-width:768px)
+{
+    .section .container .desc { width:100% !important; }
+    .section .container img { width:100% !important; }
+}
+@media only screen and (max-width:1024px)
+{
+    .menu { display:none !important; }
+    .mobile-menu { display:inline !important; }
+}
